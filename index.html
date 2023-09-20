@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha e Gráfico com Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../planilha_grafico/styles.css">
+</head>
+
+<header>
+    <!-- Barra de navegação Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    
+        <div class="container">
+            <!-- Título ou logotipo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="200" height="36" class="d-inline-block align-top">
+                
+            </a>
+           
+
+            <!-- Botão de menu responsivo para dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens de navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <!--Background  (tela de Fundo!)-->
+    <body style="background-image: url('../planilha_grafico/images/background.jpg');">
+
+    <div class="container">
+        <CENTER><h1>Planilha de Vendas Mensal</h1></CENTER>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Mês</th>
+                    <th>Vendas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>750</td>
+                </tr>
+                <tr>
+                    <td>Março</td>
+                    <td>900</td>
+                </tr>
+                <!-- Adicione mais linhas de dados conforme necessário -->
+            </tbody>
+        </table>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Gráfico de Tendencia </h2>
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer class="navbar navbar-expand-lg navbar-dark bg-primary">       
+            <div class="container">
+                <center><p>&copy; 2023 Carlos Batista. Todos os direitos reservados.</p></center>
+            </div>
+        </footer>
+
+</body>
+</html>

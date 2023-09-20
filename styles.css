@@ -1,0 +1,48 @@
+/* Estilos para a tabela da planilha */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo da tabela semitransparente */
+    color: #333; /* Cor do texto dentro da tabela */
+}
+
+th, td {
+    border: 1px solid #1184a7;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para o gráfico */
+#chart {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos adicionais conforme necessário */
+body {
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto a página rola */
+    background-image: url('images/background.jpg');   
+    background-repeat: no-repeat;    
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white; /* Cor do texto */
+}
+
+/* Estilos para o gráfico */
+.card {
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo do gráfico semitransparente */
+    color: #333; /* Cor do texto dentro do gráfico */
+}
+
+h1 {
+    color: black; /* Cor do título principal em preto */
+}
